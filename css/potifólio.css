@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
+}
 
 body {
     background-color: #272727 ;
@@ -11,12 +24,16 @@ body {
 
 .container {
     color: white;
-    margin-top: 10%;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
-.container h1{
+.container  h1{
     font-family: "Merriweather",serif;
+    font-size: 3rem;
+}
+.container h2{
+    font-family: "Merriweather", serif;
+    margin-bottom: 20px;
     font-size: 3rem;
 }
 
@@ -24,6 +41,15 @@ body {
     font-family: "Montserrat",serif;
     margin-top: 40px;
     margin-bottom: 50px;
+}
+
+.container p {
+    margin-bottom: 15px;
+    font-family: "Montserrat", serif;
+}
+
+.Name .container{
+    margin-top: 0px;
 }
 
 .perfil-image {
@@ -35,6 +61,30 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     float:right;
     margin-right: 200px;
+animation: float 3s infinite ease-in-out;
+}
+
+.about-me .about{
+    background: #1c1c1c;
+    padding: 20px;
+    margin-top: 40%;
+    margin-right: 10%;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+.top {
+    float: right;
+    margin-bottom: 100px;
+    background-color: #1c1c1c;
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.buttons{
+    margin-top: 20px
 }
 
 .buttons .btn {
@@ -42,7 +92,7 @@ body {
     font-family: "Montserrat",serif;
     color: #ffffff;
     background: #673AB7;
-    padding: 10px 20px;
+    padding: 5px 4px;
     border-radius: 5px;
     margin: 10px;
     transition: background 0.3s;
@@ -53,28 +103,28 @@ body {
 }
 
 .social-image{
-    margin-top: 200px;
+    margin-left: 10%; 
 }
-
-.social-image h2{
-    font-size: 3rem;
-    margin-bottom: 50px;
-}
-
 .social-image img{
-    height: 60px;
+    height: 40px;
+    margin: 10px;
+    transition: filter 0.3s ease-in-out, transform 0.3 ease-in-out;
+    cursor: pointer;
 }
 
+.social-image a{
+    text-decoration: none;
+}
+
+.social-image img:hover{
+    filter: brightness(1.3);
+    transform: scale(1.1);
+}
 
 .projects {
     margin-top: 300px
     
 }
-
-.projects h2 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-    font-family: "Merriweather", serif;}
 
 .project {
     background: #1c1c1c;
@@ -83,12 +133,6 @@ body {
     margin-bottom: 100px;
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-
-.project p {
-    margin-bottom: 15px;
-    font-family: "Montserrat", serif;
 }
 
 
