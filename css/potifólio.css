@@ -46,6 +46,7 @@ body {
 .container p {
     margin-bottom: 15px;
     font-family: "Montserrat", serif;
+    font-size: 1.5rem;
 }
 
 .Name .container{
@@ -71,6 +72,7 @@ animation: float 3s infinite ease-in-out;
     margin-right: 10%;
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 2px solid #673AB7;
 }
 
 
@@ -92,10 +94,11 @@ animation: float 3s infinite ease-in-out;
     font-family: "Montserrat",serif;
     color: #ffffff;
     background: #673AB7;
-    padding: 5px 4px;
+    padding: 5px 10px;
     border-radius: 5px;
     margin: 10px;
     transition: background 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .buttons .btn:hover {
@@ -122,17 +125,17 @@ animation: float 3s infinite ease-in-out;
 }
 
 .projects {
-    margin-top: 300px
-    
+    margin-top: 50%;
 }
 
+
 .project {
+    max-width: 90%;
     background: #1c1c1c;
-    padding: 20px;
-    margin-right: 200px;
-    margin-bottom: 100px;
+    padding: 50px;
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 10%;
 }
 
 
