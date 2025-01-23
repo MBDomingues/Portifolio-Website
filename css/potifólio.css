@@ -28,11 +28,6 @@ body {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.container.show {
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
 .container  h1{
     font-family: "Merriweather",serif;
     font-size: 3rem;
@@ -174,4 +169,23 @@ body {
         width: 200px;
         height: 200px;
     }
+
+    .container h1{
+        font-size: 2rem;
+    }
+
+    .container h2{
+        font-size: 1.5rem;
+    }
+
+    .container p{
+        font-size: 1rem;
+    }
+
+    .project img{
+        width: 150px;
+        margin-bottom: 10%;
+    }
+
+
 }
