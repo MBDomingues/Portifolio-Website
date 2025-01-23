@@ -162,3 +162,16 @@ body {
 .project .btn:hover {
     background: #388e3c;
 }
+
+
+@media (max-width: 538px) {
+
+    .buttons {
+        text-align: center;
+    }
+
+    .perfil-image {
+        width: 200px;
+        height: 200px;
+    }
+}
