@@ -24,7 +24,13 @@ body {
 
 .container {
     color: white;
-    margin-left: 10%;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.container.show {
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .container  h1{
@@ -50,7 +56,7 @@ body {
 }
 
 .Name .container{
-    margin-top: 0px;
+    margin-left: 10%;
 }
 
 .perfil-image {
@@ -61,15 +67,15 @@ body {
     border: 2px solid #673AB7;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     float:right;
-    margin-right: 200px;
-animation: float 3s infinite ease-in-out;
+    margin-right: 10%;
+    animation: float 3s infinite ease-in-out;
 }
 
 .about-me .about{
     background: #1c1c1c;
     padding: 20px;
     margin-top: 40%;
-    margin-right: 10%;
+    width: 100%;
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border: 2px solid #673AB7;
@@ -136,8 +142,14 @@ animation: float 3s infinite ease-in-out;
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid #673AB7;
 }
 
+.projects h2{
+    margin-left: 10%;
+}
 
 .project .btn {
     text-decoration: none;
