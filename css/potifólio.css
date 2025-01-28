@@ -24,8 +24,6 @@ body {
 
 .container {
     color: white;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .container  h1{
@@ -76,6 +74,30 @@ body {
     border: 2px solid #673AB7;
 }
 
+.my-skills {
+    margin-top: 30%;
+    text-align: center;
+}
+
+.skills-scroling {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.skills-scroling img {
+    width: 8%;
+    margin: 5%;
+    animation: float 3s infinite ease-in-out;
+}
+
+.skills-scroling p {
+    transition: transform 0.3 ease-in-out;
+    cursor: pointer;
+} 
+
+.skills-scroling p:hover {
+    transform: scale(1.1);
+}
 
 .top {
     float: right;
