@@ -1,6 +1,16 @@
-My personal portfolio, was created to showcase my projects and track my growth as a technology professional. The platform represents my continuous learning journey, where I include the projects I develop, highlighting the skills I have acquired and applied in each one. My goal is to keep the portfolio consistently updated, reflecting my growth and newly gained knowledge. Additionally, it serves as a showcase to demonstrate my commitment to innovation, organization, and my constant pursuit of improvement in the technology field.
+# My Portfolio 🚀
+I created this website to serve as my portfolio, showcasing my evolution as a developer. For now, the site was built using HTML and CSS, but as I improve my skills, I will constantly update it to become an even better developer. 💻✨
 
+The goal is to document my journey, share projects, and demonstrate my continuous growth in the development field. Feel free to follow my progress! 🚀
 
+🔗 Portfolio link: <a src="https://mbdomingues.github.io/Portifolio-Website/">Access here </a>
+
+Note: The site is constantly evolving, so new features and improvements will be implemented over time! 🔄
+
+## Languages ​​used
+
+<img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/>
 
 
 
