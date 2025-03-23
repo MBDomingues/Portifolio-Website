@@ -3,7 +3,7 @@ I created this website to serve as my portfolio, showcasing my evolution as a de
 
 The goal is to document my journey, share projects, and demonstrate my continuous growth in the development field. Feel free to follow my progress! 🚀
 
-🔗 Portfolio link: <a src="https://mbdomingues.github.io/Portifolio-Website/">Access here </a>
+🔗 Portfolio link: [Access here](https://mbdomingues.github.io/Portifolio-Website/)
 
 Note: The site is constantly evolving, so new features and improvements will be implemented over time! 🔄
 
