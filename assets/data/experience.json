@@ -1,0 +1,26 @@
+[
+  {
+    "company": "Sistema ESO",
+    "role": "Desenvolvedor Full Stack",
+    "period": "01/2026 – Atual",
+    "modality": "Presencial",
+    "description": "Desenvolvimento ponta a ponta e manutenção de sistema de Saúde e Segurança do Trabalho (SST), atuando do banco de dados à interface, com foco em performance, escalabilidade e usabilidade das novas funcionalidades.",
+    "tags": ["Full Stack", "Banco de Dados", "Performance"]
+  },
+  {
+    "company": "Fortram",
+    "role": "Desenvolvedor Web Full-Stack",
+    "period": "07/2025 – 12/2025",
+    "modality": "Presencial",
+    "description": "Construção de APIs e banco de dados no back-end (PHP) e criação de interfaces responsivas no front-end (HTML, CSS e JavaScript).",
+    "tags": ["PHP", "HTML", "CSS", "JavaScript"]
+  },
+  {
+    "company": "Digte",
+    "role": "Implantação & QA",
+    "period": "10/2024 – 07/2025",
+    "modality": "Home-office",
+    "description": "Implantação e personalização do sistema 'Admissão Digital'. Responsável pelo levantamento de requisitos, testes de qualidade (QA) e treinamento de clientes.",
+    "tags": ["QA", "Implantação", "Treinamento"]
+  }
+]

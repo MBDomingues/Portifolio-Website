@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Fortnite Store — Versão Java",
+    "type": "Projeto pessoal",
+    "description": "Versão original do e-commerce de cosméticos integrado à API oficial do Fortnite, construída em Java com Spring.",
+    "tags": ["Java", "Spring"],
+    "link": "https://github.com/MBDomingues/FORTINITE_PROJECT_JAVA"
+  },
+  {
+    "title": "Fortnite Store — Versão C#",
+    "type": "Projeto pessoal",
+    "description": "Migração completa do back-end da Fortnite Store de Java (Spring) para C# (.NET), mantendo a integração com a API oficial do Fortnite.",
+    "tags": ["C#", ".NET"],
+    "link": "https://github.com/MBDomingues/FORTINITE_PROJECT_CSHARP"
+  },
+  {
+    "title": "WTC-CHAT",
+    "type": "Parceria acadêmica",
+    "description": "Aplicativo de mensagens nativo para iOS, desenvolvido em parceria acadêmica com a WTC, sustentado por um back-end robusto em C#.",
+    "tags": ["Swift", "iOS", "C#"],
+    "link": "https://github.com/MBDomingues/WTC-CRM-CHAT"
+  }
+]

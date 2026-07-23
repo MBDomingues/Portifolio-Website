@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mateus Barboza Domingues — Desenvolvedor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="mountains" aria-hidden="true">
+  <div class="cloud cloud-1"><svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg"><ellipse cx="60" cy="35" rx="55" ry="18" fill="#FFFFFF"/><ellipse cx="110" cy="28" rx="40" ry="15" fill="#FFFFFF"/><ellipse cx="30" cy="30" rx="30" ry="13" fill="#FFFFFF"/></svg></div>
+  <div class="cloud cloud-2"><svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg"><ellipse cx="60" cy="35" rx="55" ry="18" fill="#FFFFFF"/><ellipse cx="110" cy="28" rx="40" ry="15" fill="#FFFFFF"/></svg></div>
+  <div class="cloud cloud-3"><svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg"><ellipse cx="60" cy="35" rx="55" ry="18" fill="#FFFFFF"/><ellipse cx="30" cy="30" rx="30" ry="13" fill="#FFFFFF"/></svg></div>
+
+  <svg class="layer-far" id="layerFar" viewBox="0 0 1600 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="mtn-layer-far" d="M0,320 L120,250 260,300 400,190 540,270 700,150 860,260 1020,200 1180,290 1340,220 1600,310 1600,500 0,500 Z"/>
+  </svg>
+  <svg class="layer-mid" id="layerMid" viewBox="0 0 1600 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="mtn-layer-mid" d="M0,380 L160,300 320,360 480,240 620,330 780,220 940,340 1100,260 1260,360 1420,280 1600,370 1600,500 0,500 Z"/>
+  </svg>
+  <svg class="layer-near" id="layerNear" viewBox="0 0 1600 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="mtn-layer-near" d="M0,430 L180,360 360,410 520,300 700,400 880,310 1060,420 1240,340 1420,420 1600,360 1600,500 0,500 Z"/>
+  </svg>
+  <svg class="layer-front" id="layerFront" viewBox="0 0 1600 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="mtn-layer-front" d="M0,470 L220,420 460,460 680,400 900,460 1150,410 1380,465 1600,430 1600,500 0,500 Z"/>
+  </svg>
+</div>
+
+<header>
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo">Mateus <span>Barboza</span></a>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="#contato" class="nav-cta">Contato</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#sobre">Sobre</a>
+  <a href="#habilidades">Habilidades</a>
+  <a href="#experiencia">Experiência</a>
+  <a href="#projetos">Projetos</a>
+  <a href="#depoimentos">Depoimentos</a>
+  <a href="#contato">Contato</a>
+  <button class="theme-toggle-mobile" id="themeToggleMobile">
+    <span class="icon-sun">☀️ Tema claro</span>
+    <span class="icon-moon">🌙 Tema escuro</span>
+  </button>
+</div>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Olá, eu sou Mateus 👋</p>
+        <h1 class="hero-name">Desenvolvedor <em>Full Stack</em>.</h1>
+        <p class="hero-sub">C# • .NET • Java • PHP • HTML • CSS • JavaScript • SQL. Construo sistemas ponta a ponta com foco em performance e boas práticas.</p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn-primary">Ver projetos</a>
+          <a href="#contato" class="btn-secondary">Falar comigo</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame">
+          <div class="hero-photo-inner">
+            <img id="heroPhoto" src="assets/images/image.png" alt="Foto de Mateus Barboza Domingues" onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';">
+            <div class="photo-placeholder" id="photoPlaceholder">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span>Role</span><span class="scroll-line"></span></div>
+  </section>
+
+  <section id="sobre">
+    <div class="wrap">
+      <p class="section-eyebrow reveal">Sobre</p>
+      <h2 class="section-title reveal">Trato cada projeto como um caminho a ser <em>trilhado com cuidado</em>.</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Sou desenvolvedor com experiência em arquitetura de software e desenvolvimento de sistemas ponta a ponta. Tenho uma sólida base em lógica de programação, testes de software e boas práticas, sempre buscando entregar soluções de alta performance que gerem valor real para o negócio.</p>
+          <p>Atuo tanto no <strong>back-end</strong> (C#, .NET, Java, PHP, Python) quanto no <strong>front-end</strong> (HTML, CSS, JavaScript), passando por bancos de dados relacionais e NoSQL como Oracle, MySQL e MongoDB. Também me comunico em inglês (nível intermediário).</p>
+          <p>Sou formado em Análise e Desenvolvimento de Sistemas pela FIAP e, fora do código, carrego mais de uma década de vivência escoteira, com anos de trabalho em equipe, resolução de problemas e compromisso com a comunidade.</p>
+        </div>
+        <div class="stat-block reveal" id="statsContainer">
+          <!-- Preenchido dinamicamente a partir de stats.json -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <div class="wrap">
+      <p class="section-eyebrow reveal">Habilidades</p>
+      <h2 class="section-title reveal">Ferramentas que uso para construir de <em>ponta a ponta</em>.</h2>
+      <div class="skills-groups" id="skillsContainer">
+        <!-- Preenchido dinamicamente a partir de skills.json -->
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <div class="wrap">
+      <p class="section-eyebrow reveal">Experiência</p>
+      <h2 class="section-title reveal">Onde já <em>coloquei a mão na massa</em>.</h2>
+      <div class="experience-list" id="experienceContainer">
+        <!-- Preenchido dinamicamente a partir de experience.json -->
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="wrap">
+      <p class="section-eyebrow reveal">Projetos</p>
+      <h2 class="section-title reveal">Projetos pessoais e <em>acadêmicos</em>.</h2>
+      <div class="project-list" id="projectsContainer">
+        <!-- Preenchido dinamicamente a partir de projects.json -->
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos">
+    <div class="wrap">
+      <p class="section-eyebrow reveal">Depoimentos</p>
+      <h2 class="section-title reveal">O que dizem sobre <em>trabalhar comigo</em>.</h2>
+      <div class="testi-grid" id="testimonialsContainer">
+        <!-- Preenchido dinamicamente a partir de testimonials.json -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="wrap">
+      <p class="section-eyebrow reveal">Contato</p>
+      <h2 class="section-title reveal">Entre em contato <em>comigo</em>.</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="social-list">
+            <a href="mailto:mateus.barboza.domingues@gmail.com">mateus.barboza.domingues@gmail.com</a>
+            <a href="tel:+5511973225818">(11) 97322-5818</a>
+            <a href="https://www.linkedin.com/in/mateus-barboza-domingues/" target="_blank" rel="noopener">linkedin.com/in/mateus-barboza-domingues</a>
+            <a href="https://github.com/MBDomingues" target="_blank" rel="noopener">github.com/MBDomingues</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>© 2026 Mateus Barboza Domingues. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
