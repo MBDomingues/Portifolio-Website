@@ -35,7 +35,7 @@ html[data-theme="dark"]{
   --mtn-near:#172432;
   --mtn-front:#0F1620;
   --line:#2A3542;
-  --icon-chip-bg:#DCE3E8;
+  --icon-chip-bg:#2A3542;
   --icon-chip-shadow:rgba(0,0,0,0.4);
 }
 
@@ -275,7 +275,7 @@ h1.hero-name em{
 }
 .hero-photo-frame{
   position:relative;
-  width:250px; height:250px;
+  width:350px; height:350px;
   animation:floatPhoto 5s ease-in-out infinite;
 }
 @keyframes floatPhoto{
@@ -424,6 +424,7 @@ section{ position:relative; padding:150px 0; }
   transition:all 0.3s ease;
 }
 .pill:hover{ border-color:var(--gold); background:var(--paper); transform:translateY(-2px); }
+
 .pill-icon{
   width:26px; height:26px;
   border-radius:7px;
@@ -432,7 +433,16 @@ section{ position:relative; padding:150px 0; }
   flex-shrink:0;
   box-shadow:0 1px 4px var(--icon-chip-shadow);
 }
-.pill-icon i{ font-size:15px; line-height:1; }
+.pill-icon i { font-size:15px; line-height:1; }
+
+.pill-icon i,
+.pill-icon i::before,
+.pill-icon i::after,
+.pill-icon i * {
+  color: var(--ink) !important;
+  fill: var(--ink) !important;
+  transition: color 0.4s ease, fill 0.4s ease;
+}
 
 .experience-list{ display:flex; flex-direction:column; }
 .experience-item{
@@ -475,13 +485,29 @@ section{ position:relative; padding:150px 0; }
 .experience-info p{ color:var(--ink-dim); font-size:0.94rem; max-width:55ch; margin-bottom:0.7rem; }
 
 .project-list{ display:flex; flex-direction:column; }
+
 .project-item{
-  padding:2.2rem 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:2.2rem 1.5rem;
+  margin: 0 -1.5rem;
   border-bottom:1px solid var(--line);
-  transition:padding-left 0.4s ease, border-color 0.4s ease;
+  transition:background-color 0.4s ease, border-color 0.4s ease, padding-left 0.4s ease;
+  text-decoration:none;
+  color:inherit;
+  border-radius:12px;
 }
-.project-item:hover{ padding-left:0.5rem; }
-.project-item:first-child{ border-top:1px solid var(--line); }
+.project-item:first-child{ border-top:1px solid var(--line); border-top-left-radius:0; border-top-right-radius:0; }
+.project-item:hover{
+  background-color:var(--paper-soft);
+  padding-left: 2rem;
+}
+
+.project-info{
+  flex:1;
+}
+
 .project-type{
   display:block;
   font-family:var(--mono);
@@ -502,49 +528,25 @@ section{ position:relative; padding:150px 0; }
 .project-tags{ display:flex; flex-wrap:wrap; gap:0.5rem; }
 .tag{
   font-family:var(--mono);
-  font-size:0.7rem;
-  color:var(--mtn-front);
+  font-size:0.8rem;
+  color:var(--gold-soft);
   letter-spacing:0.02em;
 }
 .tag:not(:last-child)::after{ content:"·"; margin-left:0.5rem; color:var(--line); }
 
-.project-link{
-  display:flex;
-  align-items:center;
-  justify-content:flex-end;
-  gap:8px;
-  width:100%;
-  margin-top:1rem;
-  font-family:var(--mono);
-  font-size:0.82rem;
-  cursor:pointer;
+.project-arrow {
+  color: var(--gold);
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.project-link-text{
-  max-width:0;
-  overflow:hidden;
-  white-space:nowrap;
-  opacity:0;
-  background:linear-gradient(90deg, var(--ink) 0%, var(--gold) 50%, var(--ink) 100%);
-  background-size:200% 100%;
-  background-position:100% 0;
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
-  transition:max-width 0.45s ease, opacity 0.3s ease, background-position 0.6s ease;
-}
-.project-link:hover .project-link-text{
-  max-width:160px;
-  opacity:1;
-  background-position:0% 0;
-}
-.project-link-arrow{
-  flex-shrink:0;
-  color:var(--ink);
-  transition:color 0.3s ease, transform 0.3s ease;
-}
-.project-link:hover .project-link-arrow{
-  color:var(--gold);
-  transform:translateX(2px);
+.project-item:hover .project-arrow {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .testi-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.8rem; }
@@ -661,6 +663,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .skills-groups{ grid-template-columns:1fr 1fr; }
   .testi-grid{ grid-template-columns:1fr; }
   .experience-item{ grid-template-columns:1fr; gap:0.6rem; }
+  .project-item { padding: 1.5rem; flex-direction: column; align-items: flex-start; gap: 1rem; margin: 0; }
+  .project-item:hover { padding-left: 1.5rem; }
+  .project-arrow { transform: translateX(0); opacity: 1; margin-left: 0; align-self: flex-end; }
 }
 @media (max-width: 560px){
   .wrap{ padding:0 22px; }

@@ -2,32 +2,32 @@
   {
     "group": "Linguagens",
     "items": [
-      { "name": "C#", "icon": "devicon-csharp-plain colored" },
-      { "name": "Java", "icon": "devicon-java-plain colored" },
-      { "name": "PHP", "icon": "devicon-php-plain colored" },
-      { "name": "Python", "icon": "devicon-python-plain colored" }
+      { "name": "C#", "icon": "devicon-csharp-plain" },
+      { "name": "Java", "icon": "devicon-java-plain" },
+      { "name": "PHP", "icon": "devicon-php-plain" },
+      { "name": "Python", "icon": "devicon-python-plain" }
     ]
   },
   {
     "group": "Front-end",
     "items": [
-      { "name": "HTML5", "icon": "devicon-html5-plain colored" },
-      { "name": "CSS3", "icon": "devicon-css3-plain colored" },
-      { "name": "JavaScript", "icon": "devicon-javascript-plain colored" },
-      { "name": "jQuery", "icon": "devicon-jquery-plain colored" },
-      { "name": "Bootstrap", "icon": "devicon-bootstrap-plain colored" }
+      { "name": "HTML5", "icon": "devicon-html5-plain" },
+      { "name": "CSS3", "icon": "devicon-css3-plain" },
+      { "name": "JavaScript", "icon": "devicon-javascript-plain" },
+      { "name": "jQuery", "icon": "devicon-jquery-plain" },
+      { "name": "Bootstrap", "icon": "devicon-bootstrap-plain" }
     ]
   },
   {
     "group": "Frameworks & Dados",
     "items": [
-      { "name": ".NET", "icon": "devicon-dotnetcore-plain colored" },
-      { "name": "Spring Boot", "icon": "devicon-spring-plain colored" },
-      { "name": "MySQL", "icon": "devicon-mysql-plain colored" },
-      { "name": "MongoDB", "icon": "devicon-mongodb-plain colored" },
-      { "name": "Docker", "icon": "devicon-docker-plain colored" },
-      { "name": "Git", "icon": "devicon-git-plain colored" },
-      { "name": "AWS", "icon": "devicon-amazonwebservices-original colored" }
+      { "name": ".NET", "icon": "devicon-dotnetcore-plain" },
+      { "name": "Spring Boot", "icon": "devicon-spring-plain" },
+      { "name": "MySQL", "icon": "devicon-mysql-plain" },
+      { "name": "MongoDB", "icon": "devicon-mongodb-plain" },
+      { "name": "Docker", "icon": "devicon-docker-plain" },
+      { "name": "Git", "icon": "devicon-git-plain" },
+      { "name": "AWS", "icon": "devicon-amazonwebservices-plain" }
     ]
   }
 ]

@@ -29,7 +29,7 @@ const layers = [
   { el: document.getElementById('layerNear'),  rate: 0.09 },
   { el: document.getElementById('layerFront'), rate: 0.14 },
 ];
-const MAX_OFFSET = 60; // px - keeps the parallax subtle and gap-free
+const MAX_OFFSET = 60;
 
 function clamp(value, min, max){
   return Math.max(min, Math.min(max, value));
@@ -197,22 +197,38 @@ fetch('assets/data/projects.json')
     const container = document.getElementById('projectsContainer');
     if(!container) return;
     container.innerHTML = '';
+    
     items.forEach(item => {
       const tagsHtml = item.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
-      const linkHtml = item.link
-        ? `<a class="project-link" href="${item.link}" target="_blank" rel="noopener"><span class="project-link-text">Ver repositório</span><span class="project-link-arrow">→</span></a>`
-        : '';
-      const el = document.createElement('div');
+      
+      const el = document.createElement(item.link ? 'a' : 'div');
       el.className = 'project-item reveal';
+      
+      if(item.link){
+        el.href = item.link;
+        el.target = '_blank';
+        el.rel = 'noopener';
+      }
+
+      const arrowHtml = item.link 
+        ? `<div class="project-arrow">
+             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+               <line x1="5" y1="12" x2="19" y2="12"></line>
+               <polyline points="12 5 19 12 12 19"></polyline>
+             </svg>
+            </div>` 
+        : '';
+
       el.innerHTML = `
         <div class="project-info">
           <span class="project-type">${item.type}</span>
           <h3>${item.title}</h3>
           <p>${item.description}</p>
           <div class="project-tags">${tagsHtml}</div>
-          ${linkHtml}
         </div>
+        ${arrowHtml}
       `;
+      
       container.appendChild(el);
       revealObserver.observe(el);
     });
